@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<suite-files>
+		<suite-file path="AndroidMobileBAC.xml"></suite-file>
+		<suite-file path="AndroidMobileElite.xml"></suite-file>
+		<suite-file path="AndroidMobileGarageInn.xml"></suite-file>
+		<suite-file path="AndroidMobileGreenParking.xml"></suite-file>
+		<suite-file path="AndroidMobileReef.xml"></suite-file>
+		<suite-file path="AndroidMobileOneParking.xml"></suite-file>
+       
+
+
+
+	</suite-files>
+</suite> <!-- Suite -->

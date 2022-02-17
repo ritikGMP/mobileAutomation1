@@ -1,0 +1,2509 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Automation</title>
+        <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+        <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+	    <link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@74cc0d02f0116d1b5665bd07f6aea22c71033efe/spark/css/spark-style.css" rel="stylesheet" />
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<style type="text/css">
+
+</style></head>    <script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<body class="spa -report standard">
+    <div class="app header-dark side-nav-folded">
+        <div class="layout">
+<div class="header navbar">
+    <div class="header-container">
+        <div class="nav-logo">
+          <a href="index.html">
+            <div class="logo logo-dark" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+            <div class="logo logo-white" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+          </a>
+        </div>
+        <ul class="nav-left">
+          <li>
+            <a class="sidenav-fold-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+            <a class="sidenav-expand-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
+          <li class="search-box">
+            <a class="search-toggle" href="javascript:void(0);">
+              <i class="search-icon fa fa-search"></i>
+              <i class="search-icon-close fa fa-close"></i>
+            </a>
+          </li>
+          <li class="search-input">
+            <input id="search-tests" class="form-control" type="text" placeholder="Type to search...">
+          </li>
+        </ul>
+        <ul class="nav-right">
+          <li class="m-r-10">
+            <a href="#">
+              <span class="badge badge-primary">GMP Automation Result</span>
+            </a>
+          </li>
+            <li class="m-r-10">
+                <a href="#">
+                    <span class="badge badge-primary">Jan 24, 2022 04:09:48 pm</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div><div class="side-nav side-nav-folded">
+  <div class="side-nav-inner">
+    <ul class="side-nav-menu scrollable">
+      <li class="nav-item dropdown" onclick="toggleView('test-view')">
+        <a id="nav-test" class="dropdown-toggle" href="index.html">
+          <span class="icon-holder">
+            <i class="fa fa-align-left"></i>
+          </span>
+          <span class="title">Tests</span>
+        </a>
+      </li>
+            <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+        <a id="nav-dashboard" class="dropdown-toggle" href="dashboard.html">
+          <span class="icon-holder">
+            <i class="fa fa-bar-chart"></i>
+          </span>
+          <span class="title">Dashboard</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>            <div class="page-container">
+                <div class="main-content">
+<div class="test-wrapper row test-view">
+	<div class="test-list">
+		<div class="test-list-tools">
+			<ul class="tools pull-left">
+				<li>
+					<a href="">
+					<span class="font-size-14">Tests</span>
+					</a>
+				</li>
+			</ul>
+			<ul class="tools text-right">
+				<li class="user-profile dropdown dropdown-animated scale-left">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					<i class="fa fa-exclamation-circle"></i>
+					</a>
+					<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+						<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success pull-right"></span></a>
+						<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>
+						
+						
+						
+						
+						<div class="dropdown-divider"></div>
+						<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="test-list-wrapper scrollable">
+			<ul class="test-list-item">
+				<li class="test-item"  status="pass" test-id="1"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">selectCountry</p>
+							<p class="duration text-sm">0h 0m 13s+626ms</p>
+							<span class="datetime">16:10:17 pm</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">selectCountry</h5>
+									<span class='badge badge-success'>01.24.2022 16:10:17</span>
+									<span class='badge badge-danger'>01.24.2022 16:10:30</span>
+									<span class='badge badge-default'>0h 0m 13s+626ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:10:17 pm</td>
+				<td>
+						New Test started: --> selectCountry
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:10:22 pm</td>
+				<td>
+						Going to click Login button
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:10:30 pm</td>
+				<td>
+						Clicked Login button successfully
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:10:30 pm</td>
+				<td>
+						Test Passed: selectCountry
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>4:10:30 pm</td>
+				<td>
+						Test Passed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:10:30 pm</td>
+				<td>
+						Test end:(Success) --> selectCountry
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="2"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">loginAppcoa</p>
+							<p class="duration text-sm">0h 0m 31s+12ms</p>
+							<span class="datetime">16:10:31 pm</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">loginAppcoa</h5>
+									<span class='badge badge-success'>01.24.2022 16:10:31</span>
+									<span class='badge badge-danger'>01.24.2022 16:11:02</span>
+									<span class='badge badge-default'>0h 0m 31s+12ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:10:31 pm</td>
+				<td>
+						New Test started: --> loginAppcoa
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:10:43 pm</td>
+				<td>
+						Going to Login with credentials: bactest4@yopmail.com -> testing
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:10:46 pm</td>
+				<td>
+						Credentials entered successfully
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:10:48 pm</td>
+				<td>
+						Going to click Login button
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:10:48 pm</td>
+				<td>
+						Clicked Login button sucessfully.
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:10:52 pm</td>
+				<td>
+						Going to click Accept Push Notification
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:10:52 pm</td>
+				<td>
+						Clicked Accept Push Notification button sucessfully.
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:10:58 pm</td>
+				<td>
+						username is: GMP Test
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:11:02 pm</td>
+				<td>
+						Test Passed: loginAppcoa
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>4:11:02 pm</td>
+				<td>
+						Test Passed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:11:02 pm</td>
+				<td>
+						Test end:(Success) --> loginAppcoa
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="3"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">startExtendStopSession</p>
+							<p class="duration text-sm">0h 1m 46s+428ms</p>
+							<span class="datetime">16:11:02 pm</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">startExtendStopSession</h5>
+									<span class='badge badge-success'>01.24.2022 16:11:02</span>
+									<span class='badge badge-danger'>01.24.2022 16:12:49</span>
+									<span class='badge badge-default'>0h 1m 46s+428ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:11:02 pm</td>
+				<td>
+						New Test started: --> startExtendStopSession
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:11:05 pm</td>
+				<td>
+						GettheParking start
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:11:16 pm</td>
+				<td>
+						parking name: BAC Demo (On-Street)
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:11:16 pm</td>
+				<td>
+						GettheParking  end
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:11:16 pm</td>
+				<td>
+						StartsessionforParkingwithPass start
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:11:16 pm</td>
+				<td>
+						Scroll page starts
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:11:22 pm</td>
+				<td>
+						Scroll page ends
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:11:28 pm</td>
+				<td>
+						StartsessionforParkingwithPass end
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:11:28 pm</td>
+				<td>
+						Dialer Movement for start Session: start
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:11:28 pm</td>
+				<td>
+						Country: Australia
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:11:35 pm</td>
+				<td>
+						Dialer Movement for start Session: ends
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:11:40 pm</td>
+				<td>
+						dialerMovement end
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:11:41 pm</td>
+				<td>
+						PaymentConfirmation start
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:11:46 pm</td>
+				<td>
+						payAmount.getText(): Confirm Pay ₹0.10
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:11:56 pm</td>
+				<td>
+						PaymentConfirmation end: ActualPaymentSuccess Payment Successful
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:11:56 pm</td>
+				<td>
+						Extend Session start
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:12:02 pm</td>
+				<td>
+						Extend Session Dialer Movement start:
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:12:02 pm</td>
+				<td>
+						Country: Australia
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:12:08 pm</td>
+				<td>
+						Extend Session Dialer Movement ends:
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:12:13 pm</td>
+				<td>
+						ExtendSession end:Parkingprice ₹0.00
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:12:13 pm</td>
+				<td>
+						ExtendSession end: ActualExtendedParkingPrice0.00
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:12:16 pm</td>
+				<td>
+						ExtendPaymentConfirmation start
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:12:17 pm</td>
+				<td>
+						ExtendPaymentConfirmation end:
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:12:27 pm</td>
+				<td>
+						StopSession start
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:12:34 pm</td>
+				<td>
+						StopSession end
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:12:49 pm</td>
+				<td>
+						Test Passed: startExtendStopSession
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>4:12:49 pm</td>
+				<td>
+						Test Passed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:12:49 pm</td>
+				<td>
+						Test end:(Success) --> startExtendStopSession
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:12:49 pm</td>
+				<td>
+						Ends Succcessfully
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="4"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">selectCountry</p>
+							<p class="duration text-sm">0h 0m 12s+683ms</p>
+							<span class="datetime">16:13:05 pm</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">selectCountry</h5>
+									<span class='badge badge-success'>01.24.2022 16:13:05</span>
+									<span class='badge badge-danger'>01.24.2022 16:13:17</span>
+									<span class='badge badge-default'>0h 0m 12s+683ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:13:05 pm</td>
+				<td>
+						New Test started: --> selectCountry
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:13:10 pm</td>
+				<td>
+						Going to click Login button
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:13:17 pm</td>
+				<td>
+						Clicked Login button successfully
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:13:17 pm</td>
+				<td>
+						Test Passed: selectCountry
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>4:13:17 pm</td>
+				<td>
+						Test Passed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:13:17 pm</td>
+				<td>
+						Test end:(Success) --> selectCountry
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="5"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">loginAppcoa</p>
+							<p class="duration text-sm">0h 0m 28s+949ms</p>
+							<span class="datetime">16:13:18 pm</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">loginAppcoa</h5>
+									<span class='badge badge-success'>01.24.2022 16:13:18</span>
+									<span class='badge badge-danger'>01.24.2022 16:13:46</span>
+									<span class='badge badge-default'>0h 0m 28s+949ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:13:18 pm</td>
+				<td>
+						New Test started: --> loginAppcoa
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:13:30 pm</td>
+				<td>
+						Going to Login with credentials: kavyatest9@gmail.com -> Kavya@111
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:13:32 pm</td>
+				<td>
+						Credentials entered successfully
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:13:34 pm</td>
+				<td>
+						Going to click Login button
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:13:34 pm</td>
+				<td>
+						Clicked Login button sucessfully.
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:13:38 pm</td>
+				<td>
+						Going to click Accept Push Notification
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:13:38 pm</td>
+				<td>
+						Clicked Accept Push Notification button sucessfully.
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:13:39 pm</td>
+				<td>
+						Going to click Food Alert
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:13:40 pm</td>
+				<td>
+						Clicked Food alert button sucessfully.
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:13:42 pm</td>
+				<td>
+						username is: Kavya Test
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:13:46 pm</td>
+				<td>
+						Test Passed: loginAppcoa
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>4:13:46 pm</td>
+				<td>
+						Test Passed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:13:46 pm</td>
+				<td>
+						Test end:(Success) --> loginAppcoa
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="fail" test-id="6"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar fail-bg">
+						<i class="fa fa-times text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">startExtendStopSession</p>
+							<p class="duration text-sm">0h 3m 31s+660ms</p>
+							<span class="datetime">16:13:47 pm</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-fail">startExtendStopSession</h5>
+									<span class='badge badge-success'>01.24.2022 16:13:47</span>
+									<span class='badge badge-danger'>01.24.2022 16:17:18</span>
+									<span class='badge badge-default'>0h 3m 31s+660ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:13:47 pm</td>
+				<td>
+						New Test started: --> startExtendStopSession
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:13:50 pm</td>
+				<td>
+						GettheParking start
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:14:00 pm</td>
+				<td>
+						parking name: Demo Park (On-Street)
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:14:01 pm</td>
+				<td>
+						GettheParking  end
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:14:01 pm</td>
+				<td>
+						StartsessionforParkingwithPass start
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:14:01 pm</td>
+				<td>
+						Scroll page starts
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:14:07 pm</td>
+				<td>
+						Scroll page ends
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:14:13 pm</td>
+				<td>
+						StartsessionforParkingwithPass end
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:14:13 pm</td>
+				<td>
+						Dialer Movement for start Session: start
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:14:13 pm</td>
+				<td>
+						Country: United States Elite
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:14:20 pm</td>
+				<td>
+						Dialer Movement for start Session: ends
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:14:58 pm</td>
+				<td>
+						dialerMovement end
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:14:59 pm</td>
+				<td>
+						PaymentConfirmation start
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:15:35 pm</td>
+				<td>
+						PaymentConfirmation end error: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //*[contains(@resource-id,':id/tv_confirm_pay')]}) (tried for 30 second(s) with 500 milliseconds interval)
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:15:35 pm</td>
+				<td>
+						Extend Session start
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:17:17 pm</td>
+				<td>
+						ExtendSession end error: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //*[contains(@resource-id,':id/tv_extend_parking_session')]}) (tried for 100 second(s) with 500 milliseconds interval)
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:17:17 pm</td>
+				<td>
+						Test end:(Fail) --> startExtendStopSession: java.lang.NullPointerException: Cannot invoke "String.trim()" because "in" is null
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>4:17:17 pm</td>
+				<td>
+						Reason for failure: java.lang.NullPointerException: Cannot invoke "String.trim()" because "in" is null
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:17:18 pm</td>
+				<td>
+						Ends Succcessfully
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='/home/ritik/eclipse-workspace/GMP_HybridAutomationFramework-masterfinalProduction/Output/Screenshot/2022_01_24_04_17_18.jpg' src='/home/ritik/eclipse-workspace/GMP_HybridAutomationFramework-masterfinalProduction/Output/Screenshot/2022_01_24_04_17_18.jpg'>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="7"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">selectCountry</p>
+							<p class="duration text-sm">0h 0m 11s+86ms</p>
+							<span class="datetime">16:17:38 pm</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">selectCountry</h5>
+									<span class='badge badge-success'>01.24.2022 16:17:38</span>
+									<span class='badge badge-danger'>01.24.2022 16:17:49</span>
+									<span class='badge badge-default'>0h 0m 11s+86ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:17:38 pm</td>
+				<td>
+						New Test started: --> selectCountry
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:17:43 pm</td>
+				<td>
+						Going to click Login button
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:17:49 pm</td>
+				<td>
+						Clicked Login button successfully
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:17:49 pm</td>
+				<td>
+						Test Passed: selectCountry
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>4:17:49 pm</td>
+				<td>
+						Test Passed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:17:49 pm</td>
+				<td>
+						Test end:(Success) --> selectCountry
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="8"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">loginAppcoa</p>
+							<p class="duration text-sm">0h 0m 29s+497ms</p>
+							<span class="datetime">16:17:49 pm</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">loginAppcoa</h5>
+									<span class='badge badge-success'>01.24.2022 16:17:49</span>
+									<span class='badge badge-danger'>01.24.2022 16:18:18</span>
+									<span class='badge badge-default'>0h 0m 29s+497ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:17:49 pm</td>
+				<td>
+						New Test started: --> loginAppcoa
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:18:01 pm</td>
+				<td>
+						Going to Login with credentials: garageinntest4@yopmail.com -> testing
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:18:03 pm</td>
+				<td>
+						Credentials entered successfully
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:18:05 pm</td>
+				<td>
+						Going to click Login button
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:18:05 pm</td>
+				<td>
+						Clicked Login button sucessfully.
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:18:09 pm</td>
+				<td>
+						Going to click Accept Push Notification
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:18:09 pm</td>
+				<td>
+						Clicked Accept Push Notification button sucessfully.
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:18:13 pm</td>
+				<td>
+						username is: GMP test
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:18:18 pm</td>
+				<td>
+						Test Passed: loginAppcoa
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>4:18:18 pm</td>
+				<td>
+						Test Passed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:18:18 pm</td>
+				<td>
+						Test end:(Success) --> loginAppcoa
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="9"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">startExtendStopSession</p>
+							<p class="duration text-sm">0h 1m 56s+137ms</p>
+							<span class="datetime">16:18:19 pm</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">startExtendStopSession</h5>
+									<span class='badge badge-success'>01.24.2022 16:18:19</span>
+									<span class='badge badge-danger'>01.24.2022 16:20:15</span>
+									<span class='badge badge-default'>0h 1m 56s+137ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:18:19 pm</td>
+				<td>
+						New Test started: --> startExtendStopSession
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:18:22 pm</td>
+				<td>
+						GettheParking start
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:18:31 pm</td>
+				<td>
+						parking name: Demo Park (On-Street)
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:18:31 pm</td>
+				<td>
+						GettheParking  end
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:18:31 pm</td>
+				<td>
+						StartsessionforParkingwithPass start
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:18:31 pm</td>
+				<td>
+						Scroll page starts
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:18:38 pm</td>
+				<td>
+						Scroll page ends
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:18:41 pm</td>
+				<td>
+						StartsessionforParkingwithPass end
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:18:41 pm</td>
+				<td>
+						Dialer Movement for start Session: start
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:18:41 pm</td>
+				<td>
+						Country: Brazil
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:18:47 pm</td>
+				<td>
+						Dialer Movement for start Session: ends
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:18:52 pm</td>
+				<td>
+						dialerMovement end
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:18:53 pm</td>
+				<td>
+						PaymentConfirmation start
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:18:58 pm</td>
+				<td>
+						payAmount.getText(): Confirm Pay R$5.00
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:19:08 pm</td>
+				<td>
+						PaymentConfirmation end: ActualPaymentSuccess Payment Successful
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:19:08 pm</td>
+				<td>
+						Extend Session start
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:19:15 pm</td>
+				<td>
+						Extend Session Dialer Movement start:
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:19:15 pm</td>
+				<td>
+						Country: Brazil
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:19:27 pm</td>
+				<td>
+						Extend Session Dialer Movement ends:
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:19:32 pm</td>
+				<td>
+						ExtendSession end:Parkingprice R$5.00
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:19:32 pm</td>
+				<td>
+						ExtendSession end: ActualExtendedParkingPrice5.00
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:19:36 pm</td>
+				<td>
+						ExtendPaymentConfirmation start
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:19:37 pm</td>
+				<td>
+						ExtendPaymentConfirmation end:
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:19:49 pm</td>
+				<td>
+						StopSession start
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:19:54 pm</td>
+				<td>
+						StopSession end error: org.openqa.selenium.InvalidElementStateException: Cannot generate key press event for key code 4
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ritik-Latitude-3410', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-46-generic', java.version: '15.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {adbExecTimeout: 25000, app: /home/ritik/Downloads/relea..., appActivity: com.consumer.consumerApp.mo..., appPackage: com.garageinn.consumerapp, appWaitDuration: 5000, autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {adbExecTimeout: 25000, app: /home/ritik/Downloads/relea..., appActivity: com.consumer.consumerApp.mo..., appWaitDuration: 5000, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Android Emulator, fullReset: true, platformName: android, udid: emulator-5554, uiautomator2ServerLaunchTimeout: 80000}, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: AOSP on IA Emulator, deviceName: emulator-5554, deviceScreenDensity: 440, deviceScreenSize: 1080x2220, deviceUDID: emulator-5554, fullReset: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 66, takesScreenshot: true, udid: emulator-5554, uiautomator2ServerLaunchTimeout: 80000, viewportRect: {height: 2022, left: 0, top: 66, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 1a81c5ef-bc75-4493-9747-cc2fd07b578b
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:20:15 pm</td>
+				<td>
+						Test Passed: startExtendStopSession
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>4:20:15 pm</td>
+				<td>
+						Test Passed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:20:15 pm</td>
+				<td>
+						Test end:(Success) --> startExtendStopSession
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:20:15 pm</td>
+				<td>
+						Ends Succcessfully
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="10"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">selectCountry</p>
+							<p class="duration text-sm">0h 0m 16s+328ms</p>
+							<span class="datetime">16:20:33 pm</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">selectCountry</h5>
+									<span class='badge badge-success'>01.24.2022 16:20:33</span>
+									<span class='badge badge-danger'>01.24.2022 16:20:50</span>
+									<span class='badge badge-default'>0h 0m 16s+328ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:20:33 pm</td>
+				<td>
+						New Test started: --> selectCountry
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:20:38 pm</td>
+				<td>
+						Going to click Login button
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:20:50 pm</td>
+				<td>
+						Clicked Login button successfully
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:20:50 pm</td>
+				<td>
+						Test Passed: selectCountry
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>4:20:50 pm</td>
+				<td>
+						Test Passed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:20:50 pm</td>
+				<td>
+						Test end:(Success) --> selectCountry
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="11"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">loginAppcoa</p>
+							<p class="duration text-sm">0h 0m 27s+969ms</p>
+							<span class="datetime">16:20:50 pm</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">loginAppcoa</h5>
+									<span class='badge badge-success'>01.24.2022 16:20:50</span>
+									<span class='badge badge-danger'>01.24.2022 16:21:18</span>
+									<span class='badge badge-default'>0h 0m 27s+969ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:20:50 pm</td>
+				<td>
+						New Test started: --> loginAppcoa
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:21:02 pm</td>
+				<td>
+						Going to Login with credentials: greenparkingtest@gmail.com -> testing
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:21:04 pm</td>
+				<td>
+						Credentials entered successfully
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:21:06 pm</td>
+				<td>
+						Going to click Login button
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:21:06 pm</td>
+				<td>
+						Clicked Login button sucessfully.
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:21:10 pm</td>
+				<td>
+						Going to click Accept Push Notification
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:21:10 pm</td>
+				<td>
+						Clicked Accept Push Notification button sucessfully.
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:21:14 pm</td>
+				<td>
+						username is: GMP test
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:21:18 pm</td>
+				<td>
+						Test Passed: loginAppcoa
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>4:21:18 pm</td>
+				<td>
+						Test Passed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:21:18 pm</td>
+				<td>
+						Test end:(Success) --> loginAppcoa
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="12"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">startExtendStopSession</p>
+							<p class="duration text-sm">0h 2m 47s+562ms</p>
+							<span class="datetime">16:21:18 pm</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">startExtendStopSession</h5>
+									<span class='badge badge-success'>01.24.2022 16:21:18</span>
+									<span class='badge badge-danger'>01.24.2022 16:24:05</span>
+									<span class='badge badge-default'>0h 2m 47s+562ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:21:18 pm</td>
+				<td>
+						New Test started: --> startExtendStopSession
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:21:23 pm</td>
+				<td>
+						GettheParking start
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:21:31 pm</td>
+				<td>
+						parking name: Demo Park (On Street)
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:21:32 pm</td>
+				<td>
+						GettheParking  end
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:21:32 pm</td>
+				<td>
+						StartsessionforParkingwithPass start
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:21:32 pm</td>
+				<td>
+						Scroll page starts
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:21:38 pm</td>
+				<td>
+						Scroll page ends
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:21:42 pm</td>
+				<td>
+						StartsessionforParkingwithPass end
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:21:42 pm</td>
+				<td>
+						Dialer Movement for start Session: start
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:21:42 pm</td>
+				<td>
+						Country: Dubai
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:21:48 pm</td>
+				<td>
+						Dialer Movement for start Session: ends
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:21:53 pm</td>
+				<td>
+						dialerMovement end
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:21:54 pm</td>
+				<td>
+						PaymentConfirmation start
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:21:59 pm</td>
+				<td>
+						payAmount.getText(): Confirm Pay AED1.10
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:22:09 pm</td>
+				<td>
+						PaymentConfirmation end: ActualPaymentSuccess Payment Successful
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:22:09 pm</td>
+				<td>
+						Extend Session start
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:22:15 pm</td>
+				<td>
+						Extend Session Dialer Movement start:
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:22:15 pm</td>
+				<td>
+						Country: Dubai
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:22:25 pm</td>
+				<td>
+						Extend Session Dialer Movement ends:
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:22:30 pm</td>
+				<td>
+						ExtendSession end:Parkingprice AED0.00
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:22:30 pm</td>
+				<td>
+						ExtendSession end: ActualExtendedParkingPrice0.00
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:22:33 pm</td>
+				<td>
+						ExtendPaymentConfirmation start
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:22:34 pm</td>
+				<td>
+						ExtendPaymentConfirmation end:
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:23:44 pm</td>
+				<td>
+						StopSession start
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:23:51 pm</td>
+				<td>
+						StopSession end
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:24:05 pm</td>
+				<td>
+						Test Passed: startExtendStopSession
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>4:24:05 pm</td>
+				<td>
+						Test Passed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:24:05 pm</td>
+				<td>
+						Test end:(Success) --> startExtendStopSession
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:24:05 pm</td>
+				<td>
+						Ends Succcessfully
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="13"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">selectCountry</p>
+							<p class="duration text-sm">0h 0m 10s+947ms</p>
+							<span class="datetime">16:24:19 pm</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">selectCountry</h5>
+									<span class='badge badge-success'>01.24.2022 16:24:19</span>
+									<span class='badge badge-danger'>01.24.2022 16:24:30</span>
+									<span class='badge badge-default'>0h 0m 10s+947ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:24:19 pm</td>
+				<td>
+						New Test started: --> selectCountry
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:24:24 pm</td>
+				<td>
+						Going to click Login button
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:24:30 pm</td>
+				<td>
+						Clicked Login button successfully
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:24:30 pm</td>
+				<td>
+						Test Passed: selectCountry
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>4:24:30 pm</td>
+				<td>
+						Test Passed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:24:30 pm</td>
+				<td>
+						Test end:(Success) --> selectCountry
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="14"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">loginAppcoa</p>
+							<p class="duration text-sm">0h 0m 28s+183ms</p>
+							<span class="datetime">16:24:30 pm</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">loginAppcoa</h5>
+									<span class='badge badge-success'>01.24.2022 16:24:30</span>
+									<span class='badge badge-danger'>01.24.2022 16:24:59</span>
+									<span class='badge badge-default'>0h 0m 28s+183ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:24:30 pm</td>
+				<td>
+						New Test started: --> loginAppcoa
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:24:42 pm</td>
+				<td>
+						Going to Login with credentials: reeftest@yopmail.com -> testing
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:24:44 pm</td>
+				<td>
+						Credentials entered successfully
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:24:46 pm</td>
+				<td>
+						Going to click Login button
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:24:47 pm</td>
+				<td>
+						Clicked Login button sucessfully.
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:24:51 pm</td>
+				<td>
+						Going to click Accept Push Notification
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:24:51 pm</td>
+				<td>
+						Clicked Accept Push Notification button sucessfully.
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:24:55 pm</td>
+				<td>
+						username is: GMP test
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:24:59 pm</td>
+				<td>
+						Test Passed: loginAppcoa
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>4:24:59 pm</td>
+				<td>
+						Test Passed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:24:59 pm</td>
+				<td>
+						Test end:(Success) --> loginAppcoa
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="15"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">startExtendStopSession</p>
+							<p class="duration text-sm">0h 2m 50s+471ms</p>
+							<span class="datetime">16:24:59 pm</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">startExtendStopSession</h5>
+									<span class='badge badge-success'>01.24.2022 16:24:59</span>
+									<span class='badge badge-danger'>01.24.2022 16:27:49</span>
+									<span class='badge badge-default'>0h 2m 50s+471ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:24:59 pm</td>
+				<td>
+						New Test started: --> startExtendStopSession
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:25:03 pm</td>
+				<td>
+						GettheParking start
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:25:13 pm</td>
+				<td>
+						parking name: PND_Test
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:25:13 pm</td>
+				<td>
+						GettheParking  end
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:25:13 pm</td>
+				<td>
+						StartsessionforParkingwithPass start
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:25:13 pm</td>
+				<td>
+						Scroll page starts
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:25:19 pm</td>
+				<td>
+						Scroll page ends
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:25:22 pm</td>
+				<td>
+						StartsessionforParkingwithPass end
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:25:22 pm</td>
+				<td>
+						Dialer Movement for start Session: start
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:25:22 pm</td>
+				<td>
+						Country: Brazil
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:25:28 pm</td>
+				<td>
+						Dialer Movement for start Session: ends
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:25:33 pm</td>
+				<td>
+						dialerMovement end
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:25:34 pm</td>
+				<td>
+						PaymentConfirmation start
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:25:39 pm</td>
+				<td>
+						payAmount.getText(): Confirm Pay $0.11
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:25:50 pm</td>
+				<td>
+						PaymentConfirmation end: ActualPaymentSuccess Payment Successful
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:25:50 pm</td>
+				<td>
+						Extend Session start
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:26:56 pm</td>
+				<td>
+						Extend Session Dialer Movement start:
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:26:56 pm</td>
+				<td>
+						Country: Brazil
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:27:06 pm</td>
+				<td>
+						Extend Session Dialer Movement ends:
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:27:11 pm</td>
+				<td>
+						ExtendSession end:Parkingprice $0.21
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:27:11 pm</td>
+				<td>
+						ExtendSession end: ActualExtendedParkingPrice0.21
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:27:15 pm</td>
+				<td>
+						ExtendPaymentConfirmation start
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:27:18 pm</td>
+				<td>
+						ExtendPaymentConfirmation end:
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:27:28 pm</td>
+				<td>
+						StopSession start
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:27:34 pm</td>
+				<td>
+						StopSession end
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:27:49 pm</td>
+				<td>
+						Test Passed: startExtendStopSession
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>4:27:49 pm</td>
+				<td>
+						Test Passed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:27:49 pm</td>
+				<td>
+						Test end:(Success) --> startExtendStopSession
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>4:27:49 pm</td>
+				<td>
+						Ends Succcessfully
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="test-content scrollable">
+		<div class="test-content-tools">
+			<ul>
+				<li>
+					<a class="back-to-test" href="javascript:void(0)">
+					<i class="fa fa-arrow-left"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="test-content-detail">
+			<div class="detail-body"></div>
+		</div>
+	</div>
+</div>                    <!-- dashboard -->
+<div class="container-fluid p-4 dashboard-view">
+	<div class="row">
+		<div class="col-md-6">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Tests</h6>
+				</div>
+				<div class="card-body">
+					<div class="">
+						<canvas id='parent-analysis' width='115' height='90'></canvas>
+					</div>
+				</div>
+				<div class="card-footer">
+					<div><small data-tooltip='93.333%'>
+						<b>14</b> tests passed
+						</small>
+					</div>
+					<div>
+						<small data-tooltip='6.667%'><b>1</b> tests failed, 
+						<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+						</small>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Log events</h6>
+				</div>
+				<div class="card-body">
+					<div class="">
+						<canvas id='events-analysis' width='115' height='90'></canvas>
+					</div>
+				</div>
+				<div class="card-footer">
+					<div><small data-tooltip='6.306%'><b>14</b> events passed</small></div>
+					<div>
+						<small data-tooltip='0.45%'><b>1</b> events failed, 
+						<b data-tooltip='93.243%'>207</b> others
+						</small>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+					<div class="media justify-content-between">
+						<div class="card-header">
+							<h6 class="card-title">Tests</h6>
+							<h2 class="font-size-28 font-weight-light mt-3">15</h2>
+							<span class="text-semibold text-success font-size-15">
+							<i class="ti-arrow-up font-size-11"></i> 
+							<span>93.33%</span>
+							</span>
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-align-left font-size-70 opacity-01"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+					<div class="media justify-content-between">
+						<div class="card-header">
+							<h6 class="card-title">Start</h6>
+							<h4 class="font-weight-light mt-4">Jan 24, 2022 04:09:48 pm</h4>
+							<span class="text-semibold text-success font-size-15">
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-clock-o font-size-70 text-success opacity-01"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+					<div class="media justify-content-between">
+						<div class="card-header">
+							<h6 class="card-title">Duration</h6>
+							<h4 class="font-weight-light mt-4">0h 18m 1s+17ms</h4>
+							<span class="text-semibold font-size-15">
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-clock-o font-size-70 opacity-01"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Timeline</h6>
+				</div>
+				<div class="card-body">
+					<div class="">
+						<canvas id="timeline" height="120"></canvas>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Environment</h6>
+				</div>
+				<div class="table-overflow">
+					<table class="table table-sm">
+						<thead>
+							<tr class="bg-gray">
+								<th>Name</th>
+								<th>Value</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Tester</td>
+								<td>Karan Agarwal</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	var statusGroup = {
+	    parentCount: 15,
+		passParent: 14,
+		failParent: 1,
+		fatalParent: 0,
+		errorParent: 0,
+		warningParent: 0,
+		skipParent: 0,
+		exceptionsParent: 1,
+		childCount: 0,
+		passChild: 0,
+		failChild: 0,
+		fatalChild: 0,
+		errorChild: 0,
+		warningChild: 0,
+		skipChild: 0,
+		infoChild: 0,
+		debugChild: 0,
+		exceptionsChild: 0,
+		grandChildCount: 0,
+		passGrandChild: 0,
+		failGrandChild: 0,
+		fatalGrandChild: 0,
+		errorGrandChild: 0,
+		warningGrandChild: 0,
+		skipGrandChild: 0,
+		infoGrandChild: 0,
+		debugGrandChild: 0,
+		exceptionsGrandChild: 0,
+		eventsCount: 222,
+		passEvents: 14,
+		failEvents: 1,
+		fatalEvents: 0,
+		errorEvents: 0,
+		warningEvents: 0,
+		skipEvents: 0,
+		infoEvents: 207,
+		debugEvents: 0,
+		exceptionsEvents: 0
+	};
+</script>
+<script>
+	var timeline = {
+	        "selectCountry":13.626,"loginAppcoa":31.012,"startExtendStopSession":106.428,"selectCountry":12.683,"loginAppcoa":28.949,"startExtendStopSession":211.66,"selectCountry":11.086,"loginAppcoa":29.497,"startExtendStopSession":116.137,"selectCountry":16.328,"loginAppcoa":27.969,"startExtendStopSession":167.562,"selectCountry":10.947,"loginAppcoa":28.183,"startExtendStopSession":170.471
+	};
+</script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/spark/js/spark-script.js"></script>
+<script type="text/javascript">
+
+
+</script></body>
+</html>

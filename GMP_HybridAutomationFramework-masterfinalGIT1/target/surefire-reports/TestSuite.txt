@@ -1,0 +1,78 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 43.142 s <<< FAILURE! - in TestSuite
+selectCountry(Mobile.TestLogin)  Time elapsed: 7.216 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+org.openqa.selenium.WebDriverException: Connection refused (Connection refused)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ritik-Latitude-3410', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-49-generic', java.version: '11.0.14'
+Driver info: driver.version: AndroidDriver
+	at Mobile.TestLogin.selectCountry(TestLogin.java:102)
+Caused by: org.openqa.selenium.WebDriverException: 
+Connection refused (Connection refused)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ritik-Latitude-3410', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-49-generic', java.version: '11.0.14'
+Driver info: driver.version: AndroidDriver
+	at Mobile.TestLogin.selectCountry(TestLogin.java:102)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at Mobile.TestLogin.selectCountry(TestLogin.java:102)
+
+loginAppcoa(Mobile.TestLogin)  Time elapsed: 12.026 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+org.openqa.selenium.WebDriverException: Connection refused (Connection refused)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ritik-Latitude-3410', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-49-generic', java.version: '11.0.14'
+Driver info: driver.version: AndroidDriver
+	at Mobile.TestLogin.loginAppcoa(TestLogin.java:117)
+Caused by: org.openqa.selenium.WebDriverException: 
+Connection refused (Connection refused)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ritik-Latitude-3410', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-49-generic', java.version: '11.0.14'
+Driver info: driver.version: AndroidDriver
+	at Mobile.TestLogin.loginAppcoa(TestLogin.java:117)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at Mobile.TestLogin.loginAppcoa(TestLogin.java:117)
+
+addVehicle(Mobile.TestLogin)  Time elapsed: 0.01 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+org.openqa.selenium.WebDriverException: Connection refused (Connection refused)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ritik-Latitude-3410', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-49-generic', java.version: '11.0.14'
+Driver info: driver.version: AndroidDriver
+	at Mobile.TestLogin.addVehicle(TestLogin.java:141)
+Caused by: org.openqa.selenium.WebDriverException: 
+Connection refused (Connection refused)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ritik-Latitude-3410', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-49-generic', java.version: '11.0.14'
+Driver info: driver.version: AndroidDriver
+	at Mobile.TestLogin.addVehicle(TestLogin.java:141)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at Mobile.TestLogin.addVehicle(TestLogin.java:141)
+
+startExtendStopSession(Mobile.TestLogin)  Time elapsed: 5.026 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Connection refused (Connection refused)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ritik-Latitude-3410', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-49-generic', java.version: '11.0.14'
+Driver info: driver.version: AndroidDriver
+	at Mobile.TestLogin.startExtendStopSession(TestLogin.java:176)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at Mobile.TestLogin.startExtendStopSession(TestLogin.java:176)
+
+deleteVehicle(Mobile.TestLogin)  Time elapsed: 2.017 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+org.openqa.selenium.WebDriverException: Connection refused (Connection refused)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ritik-Latitude-3410', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-49-generic', java.version: '11.0.14'
+Driver info: driver.version: AndroidDriver
+	at Mobile.TestLogin.deleteVehicle(TestLogin.java:158)
+Caused by: org.openqa.selenium.WebDriverException: 
+Connection refused (Connection refused)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ritik-Latitude-3410', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-49-generic', java.version: '11.0.14'
+Driver info: driver.version: AndroidDriver
+	at Mobile.TestLogin.deleteVehicle(TestLogin.java:158)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at Mobile.TestLogin.deleteVehicle(TestLogin.java:158)
+
